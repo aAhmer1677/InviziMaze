@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invisible Maze</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Invisible Maze</h1>
+        <canvas id="mazeCanvas" width="500" height="500"></canvas>
+        <p id="instructions">Use the buttons or arrow keys to navigate the maze. Find the exit!</p>
+        <div id="controls">
+            <button id="up">Up</button>
+            <div>
+                <button id="left">Left</button>
+                <button id="right">Right</button>
+            </div>
+            <button id="down">Down</button>
+        </div>
+        <div id="difficulty-container">
+            <label for="difficulty">Difficulty: </label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <button id="restart-btn" style="display:none;">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
